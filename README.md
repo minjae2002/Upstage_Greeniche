@@ -89,7 +89,7 @@
         st.markdown(response)
     ```
 
-4. **Groundness 체크**:
+4. **Groundedness 체크**:
   - 답변이 문서에 근거한 내용인지 확인하기 위해 Groundedness 체크를 할 수 있습니다:
     ```python
     groundedness_check = UpstageGroundednessCheck(upstage_api_key=UPSTAGE_API_KEY)
