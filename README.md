@@ -34,19 +34,19 @@ RAG 모델을 설치하고 실행하기 위해 아래의 단계를 따르세요:
 1. **필요한 라이브러리 설치**:
   - 필요한 Python 라이브러리를 설치합니다. 터미널이나 명령 프롬프트에서 다음 명령어를 실행하세요:
 
-  ```bash
-  pip install langchain-pinecone
-  pip install langchain
-  pip install openai
-  pip install pinecone-client
-  pip install langchain_openai
-  pip install langchain-community
-  pip install langchain_upstage
-  pip install langchain_core
-  pip install streamlit
-  pip install bs4
-  ```
-  - 이 명령어는 `langchain`, `pinecone-client`, `openai`, `streamlit` 등 RAG 모델 실행과 웹 인터페이스 구성을 위한 필수 라이브러리를 설치합니다.  
+    ```bash
+    pip install langchain-pinecone
+    pip install langchain
+    pip install openai
+    pip install pinecone-client
+    pip install langchain_openai
+    pip install langchain-community
+    pip install langchain_upstage
+    pip install langchain_core
+    pip install streamlit
+    pip install bs4
+    ```
+    - 이 명령어는 `langchain`, `pinecone-client`, `openai`, `streamlit` 등 RAG 모델 실행과 웹 인터페이스 구성을 위한 필수 라이브러리를 설치합니다.  
 
 2. **API 키 설정**:
   - Upstage와 Pinecone API 키를 설정합니다. 이 키들은 외부 서비스와의 통신을 위해 필요합니다.
@@ -55,7 +55,7 @@ RAG 모델을 설치하고 실행하기 위해 아래의 단계를 따르세요:
      UPSTAGE_API_KEY = "your-upstage-api-key"
      PINECONE_API_KEY = "your-pinecone-api-key"
      ```
-  - UPSTAGE_API_KEY는 Upstage 서비스와, PINECONE_API_KEY는 Pinecone 임베딩 서비스와 연결하는 데 필요합니다.
+    - UPSTAGE_API_KEY는 Upstage 서비스와, PINECONE_API_KEY는 Pinecone 임베딩 서비스와 연결하는 데 필요합니다.
 
 ### 🔓 실행 방법
 
@@ -65,7 +65,7 @@ RAG 모델을 설치하고 실행하기 위해 아래의 단계를 따르세요:
     ```bash
     streamlit run app.py
     ```
-  - 앱이 실행된 후 브라우저에서 제공된 링크를 클릭하여 인터페이스에 접근할 수 있습니다. 인터페이스에서는 문서를 업로드하고, 챗봇에게 질문을 할 수 있습니다.
+    - 앱이 실행된 후 브라우저에서 제공된 링크를 클릭하여 인터페이스에 접근할 수 있습니다. 인터페이스에서는 문서를 업로드하고, 챗봇에게 질문을 할 수 있습니다.
 
 2. **문서 업로드 및 파싱**:
   - 파일 업로드: .txt, .md, .pdf 형식의 문서를 업로드할 수 있습니다.
