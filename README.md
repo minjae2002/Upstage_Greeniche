@@ -103,3 +103,8 @@
     else:
         st.write("출처가 불분명한 답변입니다. 확인이 필요합니다.")
     ```
+<br>
+
+<div align="center">
+  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/WORKLOAD.png" alt="내부 작업" width="2000"/>
+</div>
