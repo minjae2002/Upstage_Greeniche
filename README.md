@@ -70,34 +70,34 @@ RAG 모델을 설치하고 실행하기 위해 아래의 단계를 따르세요:
 2. **문서 업로드 및 파싱**:
   - 파일 업로드: .txt, .md, .pdf 형식의 문서를 업로드할 수 있습니다.
   - 문서가 업로드되면 API를 통해 문서가 파싱되고, 텍스트로 변환된 내용이 챗봇의 답변에 사용됩니다.
-  ```pyhton
-  uploaded_file = st.file_uploader("Upload a document (.txt, .md, .pdf)", type=("txt", "md", "pdf"))
-  if uploaded_file:
-      with st.spinner("문서 분석 중 ..."):
-        parsed_text, raw_data = parse_document(uploaded_file)
-        st.success("문서 업로드에 성공했습니다!")
-  ```
+    ```pyhton
+    uploaded_file = st.file_uploader("Upload a document (.txt, .md, .pdf)", type=("txt", "md", "pdf"))
+    if uploaded_file:
+        with st.spinner("문서 분석 중 ..."):
+          parsed_text, raw_data = parse_document(uploaded_file)
+          st.success("문서 업로드에 성공했습니다!")
+    ```
 
 3. **질문 입력 및 답변 생성**:
   - 문서가 성공적으로 파싱된 후, 챗봇에게 질문을 입력하여 답변을 생성할 수 있습니다:
-  ```python
-  question = st.text_area("챗봇 그리니에게 질문하세요:", placeholder="궁금하신 ESRS나 GRI 지표에 대해 질문하세요!")
-  if question:
-      response = ask_question(st.session_state.qa_chain, question)
-      st.markdown(response)
-  ```
+    ```python
+    question = st.text_area("챗봇 그리니에게 질문하세요:", placeholder="궁금하신 ESRS나 GRI 지표에 대해 질문하세요!")
+    if question:
+        response = ask_question(st.session_state.qa_chain, question)
+        st.markdown(response)
+    ```
 
 4. **Groundness 체크**:
   - 답변이 문서에 근거한 내용인지 확인하기 위해 Groundedness 체크를 할 수 있습니다:
-  ```python
-  groundedness_check = UpstageGroundednessCheck(upstage_api_key=UPSTAGE_API_KEY)
-  request_input = {
-      "context": st.session_state.parsed_text,
-      "answer": response,
-  }
-  groundedness_response = groundedness_check.invoke(request_input)
-  if "grounded" in groundedness_response:
-      st.write("해당 ESG 지표를 참고한 답변입니다.")
-  else:
-      st.write("출처가 불분명한 답변입니다. 확인이 필요합니다.")
-  ```
+    ```python
+    groundedness_check = UpstageGroundednessCheck(upstage_api_key=UPSTAGE_API_KEY)
+    request_input = {
+        "context": st.session_state.parsed_text,
+        "answer": response,
+    }
+    groundedness_response = groundedness_check.invoke(request_input)
+    if "grounded" in groundedness_response:
+        st.write("해당 ESG 지표를 참고한 답변입니다.")
+    else:
+        st.write("출처가 불분명한 답변입니다. 확인이 필요합니다.")
+    ```
