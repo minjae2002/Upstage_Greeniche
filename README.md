@@ -8,6 +8,10 @@
 </div>
 <br>
 
+<div align="center">
+  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/WORKLOAD.png" alt="내부 작업" width="1500"/>
+</div>
+
 ## ⚙️ 주요 기능
 *   **RAG 기반 질의응답**: RAG(검색 증강 생성)를 활용해 사용자가 업로드한 문서에서 관련 정보를 검색하고, 맥락에 맞는 정확한 답변을 실시간으로 제공합니다. 이를 통해 사용자에게 최적의 검색 경험을 제공합니다.
   
@@ -103,8 +107,3 @@
     else:
         st.write("출처가 불분명한 답변입니다. 확인이 필요합니다.")
     ```
-<br>
-
-<div align="center">
-  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/WORKLOAD.png" alt="내부 작업" width="2000"/>
-</div>
