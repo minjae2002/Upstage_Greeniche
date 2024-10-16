@@ -1,7 +1,7 @@
 # **그리니치 Greeniche** 
 
 <div>
-  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/Green-niche-symbol.png" alt="로고" align="left" width="75" style="margin-right: 30px;">
+  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/Greeniche-symbol.png" alt="로고" align="left" width="75" style="margin-right: 30px;">
   <p>
     이 서비스는 사용자와의 자연스러운 대화를 통해 ESG(환경, 사회, 지배구조) 기준에 대한 명확한 답변을 제공하여 정보 검색의 효율성을 높이는 것을 목표로 합니다. 특히, ESRS(유럽 지속 가능성 보고 표준)과 GRI(글로벌 보고 이니셔티브) 각각의 기준 및 그 사이의 변환에 대한 전문적인 지식을 제공하여 사용자의 이해를 돕습니다.
   </p>
@@ -9,7 +9,7 @@
 <br>
 
 <div align="center">
-  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/WORKLOAD.png" alt="내부 작업" width="1500"/>
+  <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/WORKLOAD.png" alt="Workload" width="1500"/>
 </div>
 
 ## ⚙️ 주요 기능
