@@ -1,4 +1,4 @@
-# **그리니치 Green-niche** 
+# **그리니치 Greeniche** 
 
 <div>
   <img src="https://github.com/minjae2002/Upstage_Green-Niche/blob/main/Green-niche-symbol.png" alt="로고" align="left" width="75" style="margin-right: 30px;">
